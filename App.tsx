@@ -1,16 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from './src/TopBar/TopBar';
+import Body from './src/Body/Body';
 
 export default function App() {
   return (
-    <View>
+    <View style={{display: 'flex', flexDirection: 'column'}}>
       <TopBar />
+           <Body />
+        <View style={{backgroundColor: 'whitesmoke', height: 160}}>
+          <Text>INFO</Text>
+        </View>
+        <View style={{backgroundColor: 'cyan', height: 80}}>
+          <Text>CODE BAR</Text>
+        </View>
     </View>
-    // <View style={styles.container}>
-    //   <Text>Student Card</Text>
-    //   <StatusBar style="auto" />
-    // </View>
   );
 }
 
@@ -18,7 +22,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
   },
 });

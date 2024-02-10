@@ -2,27 +2,25 @@ import { View, Text, StyleSheet } from "react-native";
 
 const NameBar = () => {
     return (
-        <View style={styles.topBar}>
+        <View style={styles.content}>
             <Text style={styles.text}>RAFAEL GARCÍA PÉREZ</Text>
-        </View>
+    </View>
     );
 };
 
 const styles = StyleSheet.create({
-    topBar: {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        height: '28%',
-        backgroundColor: 'blue'
+    content: {
+        width: '100%',
+        height: 43,
+        justifyContent: 'center',
+        // alignItems: 'center',
+        backgroundColor: 'cyan',
     },
     text: {
-        fontSize: 18,
         marginLeft: 30,
-        color: 'white',
+        fontSize: 17,
         fontWeight: '400',
     }
-    
 });
 
 export default NameBar;

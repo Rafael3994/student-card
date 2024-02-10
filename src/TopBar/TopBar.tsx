@@ -3,7 +3,7 @@ import HeaderBar from "./components/HeaderBar";
 import NameBar from "./components/NameBar";
 const TopBar = () => {
     return (
-        <View style={{marginTop: 25}}>
+        <View>
             <HeaderBar />
             <NameBar />
         </View>
