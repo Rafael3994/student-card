@@ -8,7 +8,7 @@ const HeaderBar = () => {
             }}
             ></View>
             <View style={{ ...styles.buttom, ...styles.title }}>
-                <Text style={{ fontSize: 18 }}>Universidad de Barcelona</Text>
+                <Text style={{ fontSize: 18 }}>Universitat de Barcelona</Text>
             </View>
             <View style={{
                 ...styles.buttom,

@@ -13,12 +13,12 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 43,
         justifyContent: 'center',
-        // alignItems: 'center',
-        backgroundColor: 'cyan',
+        backgroundColor: 'rgba(0,113,205,255)',
     },
     text: {
+        color: 'white',
         marginLeft: 30,
-        fontSize: 17,
+        fontSize: 20,
         fontWeight: '400',
     }
 });

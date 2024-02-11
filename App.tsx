@@ -8,9 +8,6 @@ export default function App() {
     <View style={{display: 'flex', flexDirection: 'column'}}>
       <TopBar />
            <Body />
-        <View style={{backgroundColor: 'whitesmoke', height: 160}}>
-          <Text>INFO</Text>
-        </View>
         <View style={{backgroundColor: 'cyan', height: 80}}>
           <Text>CODE BAR</Text>
         </View>
