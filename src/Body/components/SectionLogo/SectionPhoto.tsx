@@ -2,6 +2,13 @@ import { View, StyleSheet } from "react-native";
 import Logo from "./components/Logo";
 import Photo from "./components/Photo";
 
+import {
+    widthToDP as wp,
+    heightToDP as hp,
+    widthToFonts as wf,
+    heightToFonts as hf,
+  } from "react-native-responsive-screens";
+
 const SectionPhoto = () => {
     return (
         <View style={styles.container}>
@@ -13,9 +20,8 @@ const SectionPhoto = () => {
 
 const styles = StyleSheet.create({
     container: {
-        width: '100%',
-        height: 210,
-        backgroundColor: 'pink'
+        backgroundColor: 'grey', 
+        height: hp('29%'),
     },
 });
 

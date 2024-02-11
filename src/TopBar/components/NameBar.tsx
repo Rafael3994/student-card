@@ -1,4 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
+import {
+    widthToDP as wp,
+    heightToDP as hp,
+    widthToFonts as wf,
+    heightToFonts as hf,
+  } from "react-native-responsive-screens";
 
 const NameBar = () => {
     return (
@@ -10,14 +16,14 @@ const NameBar = () => {
 
 const styles = StyleSheet.create({
     content: {
-        width: '100%',
-        height: 43,
+        flex: 1,
+        height: hp('5%'),
         justifyContent: 'center',
         backgroundColor: 'rgba(0,113,205,255)',
     },
     text: {
         color: 'white',
-        marginLeft: 30,
+        marginLeft: wp('7%'),
         fontSize: 20,
         fontWeight: '400',
     }
