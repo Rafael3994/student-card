@@ -2,9 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from './src/TopBar/TopBar';
 import Body from './src/Body/Body';
-// TODO: Hacer icono de la Home
+
 // TODO: Hacer icono user/avatar
+// TODO: Cambiar icono hamburger por uno con puntos cuadrado (Cambiar color)
+// TODO: Quitar logo home y hamburger, este ultimo cambiarlo por el texto FET
 // TODO: Comprobar font-family
+// TODO: Hacer enlace directo con el incono de la UA, nombre: SocUB
 
 export default function App() {
   return (

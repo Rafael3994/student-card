@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 import { Icon } from 'react-native-elements'
 
 import {
@@ -11,21 +11,26 @@ import {
 const HeaderBar = () => {
     return (
         <View style={styles.topBar}>
-            <View style={{ ...styles.buttom, 
-                backgroundColor: 'pink',
-            }}
-            ></View>
+            <Image
+                style={styles.buttom}
+                source={require('./../../../assets/home.png')}
+            />
             <View style={{ ...styles.title }}>
                 <Text style={{ fontSize: 18, fontWeight: '600' }}>Universitat de Barcelona</Text>
             </View>
-            <Icon
+            <Image
+                style={styles.buttomElipsis}
+                source={require('./../../../assets/elipsis.png')}
+            />
+            {/* <Icon
                 style={{
                     ...styles.buttom,
                 }}
-                name='ellipsis-vertical'
+                // name='ellipsis-vertical'
+                name='font-awesome'
                 type='ionicon'
                 color='black'
-            />
+            /> */}
         </View>
     );
 };
@@ -39,8 +44,16 @@ const styles = StyleSheet.create({
     },
     buttom: {
         justifyContent: 'center',
-        width: wp('15%'),
-        height: hp('6%'),
+        marginLeft: wp('0.6%'),
+        width: wp('13%'),
+        height: hp('5%'),
+    },
+    buttomElipsis: {
+        marginTop: hp('0.4%'),
+        marginRight: wp('0.6%'),
+        width: wp('10%'),
+        height: hp('5%'),
+        resizeMode: 'contain',
     },
     title: {
         width: wp('70%'),
