@@ -17,7 +17,7 @@ const Photo = () => {
                     name='account'
                     type='material-community'
                     color='rgba(239,240,242,255)'
-                    size={hp('22%')}
+                    size={165}
                 />
                 <View style={{position: 'absolute'}}>
                     <View style={styles.boxText}>
@@ -39,9 +39,9 @@ const styles = StyleSheet.create({
         height: hp('29%'),
     },
     boxLogo: {
-        width: wp('50%'),
-        height: hp('24%'),
-        borderRadius: hp('100%'),
+        width: 170,
+        height: 170,
+        borderRadius: 170/2,
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'rgba(211,211,211,255)',
