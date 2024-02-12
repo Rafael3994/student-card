@@ -1,4 +1,4 @@
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Image } from "react-native";
 import { Icon } from "react-native-elements";
 import {
     widthToDP as wp,
@@ -13,16 +13,24 @@ const Photo = () => {
         // account
         <View style={styles.container}>
             <View style={styles.boxLogo}>
-                <Icon
+                {/* <Icon
                     name='account'
                     type='material-community'
                     color='rgba(239,240,242,255)'
                     size={165}
+                /> */}
+                <Image
+                    style={{
+                        width: 165,
+                        height: 165,
+                        borderRadius: 165 / 2,
+                    }}
+                    source={require('./../../../../../assets/avatar.png')}
                 />
-                <View style={{position: 'absolute'}}>
+                <View style={{ position: 'absolute' }}>
                     <View style={styles.boxText}>
                         <Text style={styles.text}>Puja la teva foto!</Text>
-                        <Text style={{...styles.text, fontWeight: 'bold'}}>ub.edu/fotoub</Text>
+                        <Text style={{ ...styles.text, fontWeight: 'bold' }}>ub.edu/fotoub</Text>
                     </View>
                 </View>
             </View>
@@ -41,14 +49,14 @@ const styles = StyleSheet.create({
     boxLogo: {
         width: 170,
         height: 170,
-        borderRadius: 170/2,
+        borderRadius: 170 / 2,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'rgba(211,211,211,255)',
+        // backgroundColor: 'rgba(211,211,211,255)',
         fontFamily: 'Prospera Book'
     },
-    boxText:{
-        marginTop: hp('4.5%'),
+    boxText: {
+        marginTop: hp('1%'),
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center'

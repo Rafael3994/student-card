@@ -22,15 +22,6 @@ const HeaderBar = () => {
                 style={styles.buttomElipsis}
                 source={require('./../../../assets/elipsis.png')}
             />
-            {/* <Icon
-                style={{
-                    ...styles.buttom,
-                }}
-                // name='ellipsis-vertical'
-                name='font-awesome'
-                type='ionicon'
-                color='black'
-            /> */}
         </View>
     );
 };

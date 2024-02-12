@@ -15,9 +15,9 @@ const Timer = () => {
         const month = today.getMonth() + 1;
         const year = today.getFullYear();
         const date = today.getDate();
-        const hour = today.getHours();
-        const minuts = today.getMinutes();
-        const seconds = today.getSeconds();
+        const hour = today.getHours().toString().length === 1 ? `0${today.getHours()}` : today.getHours();
+        const minuts = today.getMinutes().toString().length === 1 ? `0${today.getMinutes()}` : today.getMinutes();
+        const seconds = today.getSeconds().toString().length === 1 ? `0${today.getSeconds()}` : today.getSeconds();
 
         return `${date}-${month}-${year} ${hour}:${minuts}:${seconds}`;
     }
