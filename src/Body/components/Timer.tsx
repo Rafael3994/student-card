@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
+import { Icon } from 'react-native-elements'
 
 import {
     widthToDP as wp,
@@ -33,8 +34,15 @@ const Timer = () => {
     return (
         <View style={styles.content}>
             <View style={styles.box}>
-                <View style={styles.logo}>
-                </View>
+                {/* <View style={styles.logo}>
+                </View> */}
+                <Icon
+                style={styles.logo}
+                name='clock-time-three-outline'
+                type='material-community'
+                color='rgba(79,79,79,255)'
+                size={hp('6%')}
+            />
                 <View style={styles.boxTimer}>
                     <Text style={styles.timerText}>
                         {currentDate}
@@ -62,14 +70,15 @@ const styles = StyleSheet.create({
         borderColor: 'grey', 
         backgroundColor: 'whitesmoke', 
         borderRadius: 5,
-        shadowColor: '#000',
+        shadowColor: 'rgba(199,199,199,255)',
         shadowOffset: { width: 1, height: 1 },
         shadowOpacity: 0.4,
         shadowRadius: 3,
         elevation: 5,
     },
-    logo: { 
-        backgroundColor: 'pink', 
+    logo: {
+        transform: [{ rotate: '270deg'}],
+        justifyContent: 'center',
         height: hp('6.5%'),
         width: wp('14%'),
         marginLeft: wp('6%'),

@@ -12,15 +12,17 @@ import {
 const SectionPhoto = () => {
     return (
         <View style={styles.container}>
-            {/* <Photo /> */}
-            {/* <Logo /> */}
+            <View style={{width: wp('22%'), height: hp('29%')}}></View>
+            <Photo />
+            <Logo />
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: 'grey', 
+        display: 'flex',
+        flexDirection: 'row',
         height: hp('29%'),
     },
 });

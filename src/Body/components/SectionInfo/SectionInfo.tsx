@@ -18,7 +18,7 @@ const SectionInfo = () => {
                         <Text style={styles.title}>Codi de barres</Text>
                     </View>
                     <View style={styles.valueBox}>
-                        <Text style={styles.value}>6521 1013 1536 1749</Text>
+                        <Text style={styles.value}>8269610939</Text>
                     </View>
                 </View>
                 <View style={styles.flexRow}>

@@ -1,11 +1,12 @@
 import { View, Text, StyleSheet } from "react-native";
+import { Icon } from 'react-native-elements'
 
 import {
     widthToDP as wp,
     heightToDP as hp,
     widthToFonts as wf,
     heightToFonts as hf,
-  } from "react-native-responsive-screens";
+} from "react-native-responsive-screens";
 
 const HeaderBar = () => {
     return (
@@ -14,13 +15,17 @@ const HeaderBar = () => {
                 backgroundColor: 'pink',
             }}
             ></View>
-            <View style={{ ...styles.buttom, ...styles.title }}>
+            <View style={{ ...styles.title }}>
                 <Text style={{ fontSize: 18, fontWeight: '600' }}>Universitat de Barcelona</Text>
             </View>
-            <View style={{
-                ...styles.buttom,
-                backgroundColor: 'pink',
-            }}></View>
+            <Icon
+                style={{
+                    ...styles.buttom,
+                }}
+                name='ellipsis-vertical'
+                type='ionicon'
+                color='black'
+            />
         </View>
     );
 };
@@ -33,7 +38,9 @@ const styles = StyleSheet.create({
         height: hp('6%'),
     },
     buttom: {
+        justifyContent: 'center',
         width: wp('15%'),
+        height: hp('6%'),
     },
     title: {
         width: wp('70%'),
