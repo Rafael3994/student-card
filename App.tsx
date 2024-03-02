@@ -1,16 +1,19 @@
 import { StyleSheet, Text, View } from 'react-native';
 import TopBar from './src/TopBar/TopBar';
 import Body from './src/Body/Body';
+import { StatusBar } from 'expo-status-bar';
 
-// TODO: Quitar logo home y hamburger, este ultimo cambiarlo por el texto FET cuando es IOS
 // TODO: Comprobar font-family
 // TODO: Hacer enlace directo con el incono de la UA, nombre: SocUB
 
 export default function App() {
   return (
-    <View style={{ flex: 1, flexDirection: 'column' }}>
-      <TopBar />
-      <Body />
+    <View>
+      <StatusBar backgroundColor='black' />
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <TopBar />
+        <Body />
+      </View>
     </View>
   );
 }

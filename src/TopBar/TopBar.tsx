@@ -11,7 +11,7 @@ import {
 
 const TopBar = () => {
     return (
-        <View style={{height: hp('14%'), marginTop: hp('3.5%')}}>
+        <View style={{height: hp('14%'), marginTop: hp('7%')}}>
             <HeaderBar />
             <NameBar />
         </View>

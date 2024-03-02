@@ -13,12 +13,6 @@ const Photo = () => {
         // account
         <View style={styles.container}>
             <View style={styles.boxLogo}>
-                {/* <Icon
-                    name='account'
-                    type='material-community'
-                    color='rgba(239,240,242,255)'
-                    size={165}
-                /> */}
                 <Image
                     style={{
                         width: 165,
